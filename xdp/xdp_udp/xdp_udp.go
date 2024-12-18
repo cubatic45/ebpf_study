@@ -69,5 +69,5 @@ func main() {
 }
 
 func uint32ToIP(ip uint32) net.IP {
-	return net.IPv4(byte(ip>>24), byte(ip>>16), byte(ip>>8), byte(ip))
+	return net.IPv4(byte(ip), byte(ip>>8), byte(ip>>16), byte(ip>>24))
 }
